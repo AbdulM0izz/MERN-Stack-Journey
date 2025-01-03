@@ -1,0 +1,24 @@
+p {
+    color: red;
+}
+
+#art1 {
+    background-color: aqua;
+}
+
+
+/* 
+class selector .className */
+
+p.para {
+    text-align: center;
+    color: rgb(red, green, blue);
+}
+
+
+/* groupSelector */
+
+p,
+article {
+    width: 500px;
+}
