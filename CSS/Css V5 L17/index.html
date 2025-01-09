@@ -7,17 +7,36 @@
     <title>Css Position Properties</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Position fix say image fix ho jati hey */
+        /* position sticky say be img fix hoti hey lakin hamari marzi ke top margin say or container ke andar tak he fix rehy gi lakin sticky full screen tak fix hogi */
+        
         .class {
             border: solid 1px black;
+            background-color: beige;
+            position: relative;
+            height: 2000px;
         }
         
-        img {
-            margin: 10px;
+        .img1 {
+            /* margin: 10px; */
         }
         
         .img2 {
-            position: relative;
+            /* position: relative;
             top: 100px;
+            left: 10px; */
+            position: sticky;
+            top: 50px;
+        }
+        
+        .img3 {
+            padding-left: 50px;
+            position: fixed;
+        }
+        
+        .div2 {
+            background-color: brown;
+            height: 2000px;
         }
     </style>
 </head>
@@ -29,6 +48,9 @@
         <img src="pexels-olly-3758104.jpg" alt="poster2" width="300px" height="300px" class="img2">
 
         <img src="pexels-olly-3758104.jpg" alt="poster3" width="300px" height="300px" class="img3">
+
+    </div>
+    <div class="div2">
 
     </div>
 
