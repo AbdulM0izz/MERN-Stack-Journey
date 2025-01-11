@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: beige;
+            border: 5px solid black;
+            height: 1200px;
+            justify-content: start;
+            align-items: start;
+            align-content: start;
+            padding: 2px;
+            margin: 2px
+        }
+        
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 2px solid brown;
+            padding: 2px;
+            margin: 2px;
+        }
+        
+        #Box1 {
+            background-color: aqua;
+            order: 500;
+            /* flex-shrink: 5; */
+            /* flex-grow: 5; */
+            flex-basis: 400px;
+        }
+        
+        #Box2 {
+            background-color: blue;
+            flex-grow: 1;
+        }
+        
+        #Box3 {
+            background-color: orange;
+            order: -1;
+            flex-grow: 1;
+        }
+        
+        #Box4 {
+            background-color: brown;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1 Parent container ko flex container kehty hein -->
+    <!--2 Or items jo Is container ke andar hon gi unhey flex items kehty hein
+ -->
+    <!--3 BY default Is box ki Horizontal Direction Main Access Kehlati hey, Or vertical direction Cross access kehlati hey -->
+    <!-- 4 by default flex ki direction row ki hoti hey lekkin flex-direction sy hum chnage ya column kar sakty hein, row or column reverse say row reverse hooti hey -->
+    <!-- 5 flex wrap property say content wrap hoga or new lines say start hoga or jab tak space availbe hey tab tak wrap hoga or jub space available na hui to content sqeeze kar jay ga-->
+    <!-- 6 Justify content main access ke according cheezon ko place karta hey. agar flex-direction row hey to main access Horizontal hota hey. or agar column hey to main access vertical hota hey -->
+    <!-- 7 Align items ki property corresponding to cross access kam krti hey yani ke vertically  -->
+
+    <div class="container">
+        <div class="box" id="Box1">Box 1</div>
+        <div class="box" id="Box2">Box 2</div>
+        <div class="box" id="Box3">Box 3</div>
+        <div class="box" id="Box4">Box 4</div>
+    </div>
+
+</body>
+
+</html>
