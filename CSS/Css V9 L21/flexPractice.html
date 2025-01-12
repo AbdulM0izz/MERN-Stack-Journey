@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: beige;
+            border: 1px solid black;
+            margin: 1px;
+            padding: 1px;
+            height: 850px;
+            display: flex;
+        }
+        
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+        
+        @media (min-width: 1200px) {
+            .container {
+                flex-direction: row;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+
+</body>
+
+</html>
