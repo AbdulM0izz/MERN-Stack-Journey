@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            background-color: beige;
+            border: 1px solid black;
+            height: 650px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* x offset y offset shadow and shadow range: for box shadow */
+        
+        .box {
+            background-color: aquamarine;
+            border: 1px solid black;
+            height: 330px;
+            width: 330px;
+            /* box-shadow: 5px 5px 50px red; */
+            /* box-shadow: inset 5px 5px 10px red; */
+            box-shadow: 5px 5px 10px red, -5px -5px 10px black;
+        }
+        
+        #head1 {
+            /* text shaddow */
+            /* text-shadow: 1px 1px 4px white; */
+            /* text-shadow: yellow 2px 2px 5px; */
+            text-shadow: -5px -5px 5px red, 5px 5px 5px yellow, 5px 5px 5px blue
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 id="head1">Welcome To mobi Hub</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium rem necessitatibus saepe voluptatibus labore atque exercitationem deleniti pariatur, nisi assumenda unde placeat dolorem neque a?
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
