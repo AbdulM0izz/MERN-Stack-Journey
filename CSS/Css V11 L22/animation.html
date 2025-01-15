@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: beige;
+        }
+        
+        .box {
+            width: 300px;
+            height: 250px;
+            background-color: red;
+            border: 1px solid black;
+            border-radius: 20px;
+            animation: rightmove;
+            position: relative;
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+        
+        @keyframes rightmove {
+            from {
+                top: 0;
+                left: 0;
+            }
+            to {
+                top: 0;
+                left: 1000px;
+            }
+        }
+        
+        .circle {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 80px;
+            margin: 10px;
+            margin-left: 600px;
+            margin-top: 100px;
+            animation: 5s ease-in-out 1s alternate none running circlemovement;
+            position: absolute;
+        }
+        
+        @keyframes circlemovement {
+            0% {
+                top: 1%;
+                left: 5%;
+            }
+            30% {}
+            50% {}
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            hi
+        </div>
+        <div class="box2">
+            <div class="circle">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
