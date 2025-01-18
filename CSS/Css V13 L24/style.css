@@ -1,0 +1,40 @@
+/* kis be div ya box  ko rotate,move,big or small katny ko 2d transform kehty hein */
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(107, 107, 5);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    /* < */
+    /* rotate kary ke lia */
+    transition: all 1s linear;
+    /* > */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box:hover {
+    /* <
+    Rotate or size change karny ke lia */
+    /* transform: rotate(90deg); */
+    /* > */
+    /* <  
+    size bara krny ke lia scale> */
+    /* transform: scale(1.5); */
+    /* transform: skew(20deg); */
+    transform: translate(300px, 100px);
+}
+
+p {
+    font-size: 40px;
+}
