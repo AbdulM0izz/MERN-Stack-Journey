@@ -15,8 +15,141 @@ a {
 
 .container {
     /* max width ka matlab yeh puri with nahi lyga  */
-    max-width: 95vw;
+    max-width: 70vw;
     padding: 2rem 1rem;
     /* marign top or bottom 0 or center me place karny kelia auto */
     margin: 0 auto;
+}
+
+.headerContainer {
+    margin-bottom: 2.8rem;
+}
+
+.headerTitle {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.headerDescription {
+    max-width: 568px;
+    text-align: center;
+    color: rgb(105, 99, 99);
+    margin: 0 auto;
+}
+
+.maincontainer {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media(min-width: 650px) {
+    .maincontainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 1080px) {
+    .maincontainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(min-width: 1340px) {
+    .maincontainer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card1Conatiner {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(110, 106, 106);
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.cardImgContainer {
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+}
+
+.card1img {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.card1Conatiner:hover .card1img {
+    transform: scale(1.1);
+    transition-duaration: 200ms;
+}
+
+.cardtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    line-height: 1.5rem;
+    color: rgb(25, 23, 23);
+    padding: 0.5rem;
+}
+
+.cardTitleHover:hover .cardtitle {
+    color: rgb(67, 67, 182);
+}
+
+.cardbody {
+    color: rgb(113, 107, 107);
+    font-size: 1rem;
+}
+
+.card_footercontainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-betweend;
+    padding: 1.5rem;
+}
+
+.authorcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatarcontainer {
+    overflow: hidden;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid rgb(73, 70, 70);
+    border-radius: 50%;
+    background-color: rgb(180, 174, 174);
+}
+
+.authorInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.authorname {
+    color: rgb(69, 71, 187);
+}
+
+.authordate {
+    color: rgb(112, 112, 112);
+}
+
+.tagcontainer {
+    font-size: 1rem;
+    border: 1px solid rgb(138, 126, 126);
+    border-radius: 2px;
+    line-height: 1.3rem;
+    padding: 0.1rem 0.1rem;
+    color: gray;
 }
