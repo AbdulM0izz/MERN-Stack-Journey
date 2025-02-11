@@ -1,4 +1,4 @@
-#Learning MERN Stack Development 🚀
+Learning MERN Stack Development 🚀
 About This Repository
 Welcome to my web development journey! This repository documents my progression from front-end fundamentals to full-stack development using the MERN stack (MongoDB, Express.js, React.js, Node.js).
 Current Skills
@@ -7,7 +7,7 @@ HTML5: Semantic markup, forms, multimedia elements
 CSS3: Responsive design, Flexbox, Grid, animations
 JavaScript: Currently learning - Building a strong foundation in modern JavaScript
 
-##Learning Roadmap
+Learning Roadmap
 
 ✅ HTML & CSS Fundamentals
 🔄 JavaScript (In Progress)
@@ -18,13 +18,6 @@ Node.js
 Express.js
 MongoDB
 
-
-
-##Project Structure
-Copy└── frontend/
-    ├── html-projects/
-    ├── css-projects/
-    └── javascript-projects/ (current focus)
 Goals
 
 Master JavaScript fundamentals and ES6+ features
