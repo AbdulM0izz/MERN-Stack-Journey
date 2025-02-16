@@ -217,3 +217,207 @@ span {
 .content-p:hover {
     cursor: pointer;
 }
+
+
+/* footer */
+
+footer {
+    margin-top: 15px;
+}
+
+.foot-panel-1 {
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.foot-panel-1:hover {
+    background-color: #37475af3;
+}
+
+.foot-panel-2 {
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foot-panel-2 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+ul p {
+    font-weight: bold;
+}
+
+ul a {
+    display: block;
+    font-size: 0.87rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.foot-panal-3 {
+    background-color: #222f3d;
+    border: 0.1px solid gray;
+    border-radius: 4px;
+    height: 68px;
+    color: white;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* media queris */
+
+
+/* Large Screens (1200px and above) */
+
+@media screen and (max-width: 1200px) {
+    .nav-search {
+        width: 480px;
+    }
+    .box {
+        width: 30%;
+        margin: 10px;
+    }
+}
+
+
+/* Medium Screens (992px and below) */
+
+@media screen and (max-width: 992px) {
+    .nav-bar {
+        height: auto;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    .nav-search {
+        width: 100%;
+        margin: 10px 0;
+        order: 3;
+    }
+    .panel-ops {
+        width: 90%;
+    }
+    .box {
+        width: 45%;
+    }
+    .hero-msg {
+        width: 90%;
+    }
+}
+
+
+/* Tablets (768px and below) */
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        padding: 8px;
+    }
+    .add-first,
+    .nav-second {
+        font-size: 0.75rem;
+    }
+    .panel {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .panel-ops {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .panel-ops a {
+        display: block;
+        margin: 8px 0;
+    }
+    .box {
+        width: 90%;
+    }
+    .foot-panel-2 {
+        flex-wrap: wrap;
+    }
+    .foot-panel-2 ul {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+
+/* Mobile Phones (576px and below) */
+
+@media screen and (max-width: 576px) {
+    .nav-logo {
+        width: 80px;
+    }
+    .search-select {
+        width: 40px;
+        font-size: 0.8rem;
+    }
+    .search-input {
+        font-size: 0.9rem;
+    }
+    .hero-section {
+        height: 250px;
+    }
+    .hero-msg {
+        width: 95%;
+        font-size: 0.75rem;
+    }
+    .box {
+        width: 100%;
+        margin: 10px 5px;
+    }
+    .box-img {
+        height: 250px;
+    }
+    .foot-panel-2 ul {
+        width: 100%;
+    }
+    .foot-panal-3 {
+        padding: 10px;
+        text-align: center;
+        height: auto;
+    }
+}
+
+
+/* Extra Small Devices (400px and below) */
+
+@media screen and (max-width: 400px) {
+    .nav-bar {
+        justify-content: center;
+    }
+    .add-first,
+    .add-sec {
+        font-size: 0.7rem;
+    }
+    .nav-search {
+        margin: 5px;
+    }
+    .search-icon {
+        width: 35px;
+    }
+    .hero-section {
+        height: 200px;
+    }
+    .box-img {
+        height: 200px;
+    }
+}
