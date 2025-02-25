@@ -88,3 +88,8 @@ let arr2 = [2, 4, 5, 10, 20, 30, 40];
 // console.log(ans);
 
 //use of reduce
+
+let arr0 = [30, 89, 90, 50, 40, 10];
+arr0.sort();
+arr0.reverse();
+console.log(arr0);
