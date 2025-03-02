@@ -19,6 +19,7 @@ let newelement = document.createElement('span');
 newelement.textContent = "new element";
 mydiv.insertAdjacentElement('afterend', newelement);
 
+
 // remove element
 // first need parent
 
