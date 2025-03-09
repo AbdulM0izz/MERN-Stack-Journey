@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input,
+button {
+    font-size: 1.5rem;
+    border: none;
+    background-color: whitesmoke;
+    padding: 0.3rem;
+    border-radius: 50px;
+    color: gray;
+}
+
+.allImages {
+    margin-top: 30px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.singaleImage {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.firstDiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.userImage {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.userName {
+    font-size: 2rem;
+}
+
+.secondDiv {
+    margin-top: 20px;
+}
+
+.mainImage {
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.imageDes {
+    font-size: 1.5rem;
+}

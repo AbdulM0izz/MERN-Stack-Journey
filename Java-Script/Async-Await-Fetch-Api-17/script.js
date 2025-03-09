@@ -23,5 +23,4 @@ async function getdata() {
 
     console.log(data);
 }
-
 getdata();

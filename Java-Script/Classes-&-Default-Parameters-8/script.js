@@ -48,3 +48,11 @@ function utility(name, age = getage()) {
 
 }
 utility("ali")
+
+
+class ali {
+    name = "ali";
+}
+
+let cla = ali();
+console.log(ali.name);
