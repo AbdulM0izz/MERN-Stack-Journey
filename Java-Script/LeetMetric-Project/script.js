@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const url = `https://leetcode-stats-api.herokuapp.com/${username}`;
         try {
             searchbtn.textContent = "Searching";
-            searchbtn.ariaDisabled = true;
+            searchbtn.disabled = true;
 
             const response = await fetch(url);
 
@@ -42,17 +42,42 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error("Unable to fetch user details");
             }
 
-            const data = response.json();
+            const parseddata = response.json();
 
-            console.log(data);
+            console.log(parseddata);
+            displayUserdata(parseddata);
 
         } catch (error) {
             statscont.innerHTML = '<p>No Data Found</p>';
         } finally {
             searchbtn.textContent = "Search";
-            searchbtn.ariaDisabled = false;
+            searchbtn.disabled = false;
 
         }
+
+    }
+
+    function updatedata(solved, total, label, circle) {
+        const progressdegree = (solved / total) * 100;
+        circle.style.setProperty("--progress", `${progressdegree}%`);
+        label.textContent = `${solved} / ${total}`;
+
+    }
+
+    function displayUserdata(parseddata) {
+        const totalEasy = parseddata.totalEasy;
+        const totalMedium = parseddata.totalMedium;
+        const totalHard = parseddata.totalHard;
+
+        // // solved
+        const totalEasyQues = parseddata.totalEasy;
+        const totalMediumQues = parseddata.mediumSolved;
+        const totalHardQues = parseddata.hardSolved;
+
+        updatedata(totalEasyQues, totalEasy, easyLabel, easyProgressCricle);
+        updatedata(totalMediumQues, totalMedium, mediumProgressCircle, mediumLabel);
+        updatedata(totalHardQues, totalHard, hardProgressCircle, hardLabel);
+
 
     }
 
