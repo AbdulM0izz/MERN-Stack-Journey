@@ -61,7 +61,7 @@ body {
 }
 
 .weather-body {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -124,4 +124,23 @@ body {
 .text span {
     font-size: 20px;
     font-weight: 700;
+}
+
+.location-not-found {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+.location-not-found img {
+    width: 60%;
+}
+
+.location-not-found h1 {
+    font-size: 20px;
+    color: #6b6b6b;
+    margin-block-end: 15px;
 }
