@@ -38,6 +38,12 @@ main form {
     justify-content: center;
 }
 
+@media screen and (max-width:320px) {
+    main form {
+        flex-direction: column;
+    }
+}
+
 form input[type="text"] {
     flex-grow: 1;
 }
@@ -72,4 +78,46 @@ footer {
     font-size: 18px;
     position: fixed;
     width: 100%;
+}
+
+.result p {
+    margin-top: 10px;
+}
+
+.result {
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.result p[class="partofspeech"] {
+    font-style: italic;
+    color: #808080;
+    margin-top: 3px;
+}
+
+.result a {
+    text-decoration: none;
+    background-color: #1d2a57;
+    color: #ffff;
+    font-weight: 549;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.result a:hover {
+    background-color: #1d2a57e1;
+}
+
+.result li {
+    padding: 5px;
+    margin-left: 20px;
 }
