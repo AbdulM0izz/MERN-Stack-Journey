@@ -1,0 +1,21 @@
+.usercontainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: #ffff;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 50%;
+    gap: 10px;
+    margin: 20px;
+}
+
+#title {
+    color: black;
+    font-weight: 800;
+}
+
+#userimg {
+    border-radius: 50%;
+}
