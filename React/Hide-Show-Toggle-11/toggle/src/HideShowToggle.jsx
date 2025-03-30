@@ -12,6 +12,7 @@ let HideShowToggle = () => {
             }
             
               <button style={{margin: "20px"}} onClick={()=> setresult(false)}>Hide</button>
+              
              <button onClick={()=> setresult(true)}>Show</button> 
 
              <button  onClick={()=> setresult(!result)} style={{margin: "20px"}}>Toggle</button>
