@@ -1,23 +1,24 @@
-import React, { useState, createContext } from 'react';
-import FirstChild from './FirstChild';
+import React, { useState, createContext } from "react";
+import FirstComp from "./FirstComp";
 
-// Create context
 export const Mydata = createContext();
 
-const ContextApi = () => {
+const Contextapi = () => {
   const [Data, Setdata] = useState(1);
+  const [Salary , SetSalary ] = useState(null)
+
+  const Getsalary = (val) => {
+    SetSalary(val);
+  }
 
   return (
-    <Mydata.Provider value={{ Valuedata: Data }}>
-      <div>
-
-        <h2>Context API with Hook</h2>
-        <button onClick={() => Setdata(Data + 1)}>Update Data</button>
-        <FirstChild />
-
-      </div>
+    <Mydata.Provider value={{ ValueData: Data, Getsalary: Getsalary}}>
+      <h1>Context Api</h1>
+      <h1>Salary , {Salary}</h1>
+      <button onClick={() => Setdata(Data + 1)}>Data</button>
+      <FirstComp />
     </Mydata.Provider>
-  )
-}
+  );
+};
 
-export default ContextApi;
+export default Contextapi;

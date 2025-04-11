@@ -1,16 +1,15 @@
+import React, { useContext } from "react";
+import { Mydata } from "./ContetApi"; 
+import SecondComp from "./SecondComp";
 
-import React,{ useContext } from 'react';
-import { Mydata } from './ContextApi';
-
-function FirstChild() {
-
-    const {Valuedata} = useContext(Mydata);
-
+const FirstComp = () => {
+    const { ValueData } = useContext(Mydata); 
     return (
         <>
-            <h1>First child Value data , {Valuedata}</h1>
-            <SecondChild />
+            <h1>First Comp, {ValueData}</h1>
+            <SecondComp />
         </>
     );
-}
-export default FirstChild;
+};
+
+export default FirstComp;

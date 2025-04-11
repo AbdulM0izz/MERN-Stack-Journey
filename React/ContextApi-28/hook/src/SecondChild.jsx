@@ -1,16 +1,14 @@
-import React,{useContext} from 'react';
-import { Mydata } from './ContextApi';
+import React,{useContext} from "react"
+import { Mydata } from "./ContetApi"
 
-function SecondChild() {
-
-      const {Valuedata} = useContext(Mydata);
-  
-  return (
-      <>
-    <h1>Second Child data , {Valuedata} </h1>
-            
-      </>
-      
-  );
+let SecondComp = () => {
+    const { ValueData , Getsalary } = useContext(Mydata)
+    const Salary = 5000;
+    return (
+        <>
+        <h1>Second Comp | {ValueData}</h1>
+        <button onClick={()=> Getsalary(Salary)}>Salary</button>
+        </>
+    )
 }
-export default SecondChild;
+export default SecondComp
