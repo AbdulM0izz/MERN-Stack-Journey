@@ -4,6 +4,7 @@ import FirstComp from "./FirstComp";
 export const Mydata = createContext();
 
 const Contextapi = () => {
+  
   const [Data, Setdata] = useState(1);
   const [Salary , SetSalary ] = useState(null)
 
