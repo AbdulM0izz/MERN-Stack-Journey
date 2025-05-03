@@ -10,8 +10,8 @@ const PreFilled = () =>{
                 setdata(data);
                 Setformdata({
                     id: data[0].id,
-                    name: data[1].name,
-                    user: data[2].user
+                    name: data[0].name,
+                    user: data[0].user
                 })
             })
         })
