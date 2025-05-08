@@ -14,14 +14,14 @@ function App() {
      {/* <Link to="/home">Home</Link><br></br>
      <Link to="/About">About</Link> */}
 
-<Routes>
-  <Route path="/Home" element={<Home />} />
-  <Route path="/About" element={<About />} />
-  <Route path="/Employe/:name" element={<Employe />} />
-  <Route path="*" element={<Navigate to="/Home" />} />
-  {/* Or use this instead if you want a Page Not Found */}
-  {/* <Route path="*" element={<PageNotFound />} /> */}
-</Routes>
+  <Routes>
+    <Route path="/Home" element={<Home />} />
+    <Route path="/About" element={<About />} />
+    <Route path="/Employe/:name" element={<Employe />} />
+    <Route path="*" element={<Navigate to="/Home" />} />
+    {/* Or use this instead if you want a Page Not Found */}
+    {/* <Route path="*" element={<PageNotFound />} /> */}
+  </Routes>
     
     </BrowserRouter>
    
