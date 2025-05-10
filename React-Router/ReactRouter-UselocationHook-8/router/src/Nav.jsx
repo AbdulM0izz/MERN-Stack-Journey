@@ -13,6 +13,7 @@ const Nav = () => {
             <li><NavLink className='nav-link'to="/search">Search</NavLink></li>
             <li><NavLink className='nav-link'to="/usenavigate">Usenavigate</NavLink></li>
             <li><NavLink className='nav-link'to="/location">Use-Location</NavLink></li>
+            <li><NavLink className='nav-link'to="/nestedrouting">Nested-routing</NavLink></li>
         </ul>
     </div>
   )
