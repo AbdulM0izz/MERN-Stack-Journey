@@ -1,11 +1,11 @@
 import './App.css'
-import Home from './components/Home'
+import HomeContainer from './Containers/HomeContainer'
 
 function App() {
  
   return (
     <>
-    <Home />
+  <HomeContainer />
     </>
   )
 }
