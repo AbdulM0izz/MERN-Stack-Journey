@@ -1,8 +1,10 @@
-import {Add_To_Cart} from '../Reducers/Constants'
+import { Add_To_Cart } from '../Constants'; 
+
 export const addToCart = (itemData) => {
-    console.log("Actions: ", itemData)
+    console.log("Actions: ", itemData);
     return {
         type: Add_To_Cart,
-        data: itemData
-    }
-}
+        data: itemData,
+    };
+};
+export default addToCart
