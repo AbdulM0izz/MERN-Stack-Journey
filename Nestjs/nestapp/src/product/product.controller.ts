@@ -12,5 +12,6 @@ export class ProductController {
     @Get(':id')
     getproductById(@Param('id') id:string) {
         return this.productservice.getProductByid(Number(id));
+    
     }
 }
