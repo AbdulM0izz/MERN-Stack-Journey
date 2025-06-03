@@ -1,11 +1,12 @@
-import { Controller, Get, Param } from '@nestjs/common';
+/* eslint-disable prettier/prettier */
+import { Controller, Get, Param, UseGuards } from '@nestjs/common';
 import { ProductService } from './product.service';
-import { retry } from 'rxjs';
-
+import { AuthGuard } from 'src/guards/auth/auth.guard';
 @Controller('product')
 export class ProductController {
     constructor(private readonly productservice: ProductService){}
     @Get()
+    @UseGuards(AuthGuard)
     getProducts() {
         return this.productservice.getallProdycts();
     }
