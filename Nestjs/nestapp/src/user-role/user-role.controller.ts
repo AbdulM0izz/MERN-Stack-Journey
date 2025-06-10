@@ -15,6 +15,6 @@ export class UserRoleController {
 
   @Get('user-data')
   getUserdata() {
-    return { message: 'anyone can access' };
+    return { message: 'anyone can access data' };
   }
 }
