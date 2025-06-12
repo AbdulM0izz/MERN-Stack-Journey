@@ -14,10 +14,12 @@ import { MynamepipeController } from './mynamepipe/mynamepipe.controller';
 import { UserRoleController } from './user-role/user-role.controller';
 import { ExecptioncontrollerController } from './execptioncontroller/execptioncontroller.controller';
 import { LoggerMiddleware } from './middleware/logger/logger.middleware';
+import { DatabaseController } from './database/database.controller';
+import { DatabaseService } from './database/database.service';
 @Module({
   imports: [EmployeModule, CategoryModule, StudentModule, WorkModule, CostumerModule],
-  controllers: [AppController, UserController, ProductController, MynamepipeController, UserRoleController, ExecptioncontrollerController],
-  providers: [AppService, ProductService],
+  controllers: [AppController, UserController, ProductController, MynamepipeController, UserRoleController, ExecptioncontrollerController, DatabaseController],
+  providers: [AppService, ProductService, DatabaseService],
 })
 export class AppModule implements NestModule{
   configure(consumer: MiddlewareConsumer) {

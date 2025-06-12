@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Controller, Get, UseGuards } from '@nestjs/common';
 import { RoleGuard } from 'src/guards/role/role.guard';
 import { Roles } from 'src/guards/role/roles.decorator';
